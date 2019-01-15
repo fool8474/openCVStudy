@@ -1,8 +1,10 @@
 #include "mainHeader.h"
 
 int main(void) {
-	usingPointClass(); //Point 연습.
-
+	//usingPointClass(); //Point 연습.
+	//MatTutorial();
+	//MatInitialize();
+	MatAdjust();
 	system("pause");
 
 	return 0;
