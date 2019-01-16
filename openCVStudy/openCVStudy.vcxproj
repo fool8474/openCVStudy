@@ -128,16 +128,20 @@
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="mainFile.cpp" />
-    <ClCompile Include="usingMatClass.cpp" />
+    <ClCompile Include="usingMatClass.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="usingPointClass.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="usingVectorClass.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="firstOpenCV.h" />
     <ClInclude Include="mainHeader.h" />
     <ClInclude Include="usingMatClass.h" />
     <ClInclude Include="usingPointClass.h" />
+    <ClInclude Include="usingVectorClass.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

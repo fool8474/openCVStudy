@@ -4,7 +4,8 @@ int main(void) {
 	//usingPointClass(); //Point ¿¬½À.
 	//MatTutorial();
 	//MatInitialize();
-	MatAdjust();
+	//MatAdjust();
+	vectorInfo();
 	system("pause");
 
 	return 0;
