@@ -135,11 +135,12 @@
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="usingRangeAndEtcClass.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="usingVectorClass.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="window_move.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="firstOpenCV.h" />
@@ -148,6 +149,7 @@
     <ClInclude Include="usingPointClass.h" />
     <ClInclude Include="usingRangeAndEtcClass.h" />
     <ClInclude Include="usingVectorClass.h" />
+    <ClInclude Include="window_move.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

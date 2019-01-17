@@ -13,45 +13,63 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="소스 파일\OpenCVBaseClasses">
+      <UniqueIdentifier>{93fdc5b7-e6b0-40c0-852f-321cb3259d7a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\OpenCVBaseClasses">
+      <UniqueIdentifier>{611c55b7-06e7-4bd3-b3bc-4bda31477f77}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\usingWindowUI">
+      <UniqueIdentifier>{c7f83334-5cd1-4ce0-92c2-db19683f47af}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\usingWindowUI">
+      <UniqueIdentifier>{5bca8e10-6f49-40d3-be01-c04a95c134b4}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="firstOpenCV.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="usingPointClass.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="mainFile.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="usingMatClass.cpp">
+    <ClCompile Include="firstOpenCV.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="usingVectorClass.cpp">
-      <Filter>소스 파일</Filter>
+    <ClCompile Include="usingMatClass.cpp">
+      <Filter>소스 파일\OpenCVBaseClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="usingPointClass.cpp">
+      <Filter>소스 파일\OpenCVBaseClasses</Filter>
     </ClCompile>
     <ClCompile Include="usingRangeAndEtcClass.cpp">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\OpenCVBaseClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="usingVectorClass.cpp">
+      <Filter>소스 파일\OpenCVBaseClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="window_move.cpp">
+      <Filter>소스 파일\usingWindowUI</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="mainHeader.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="usingPointClass.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
     <ClInclude Include="firstOpenCV.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="usingMatClass.h">
-      <Filter>헤더 파일</Filter>
+      <Filter>헤더 파일\OpenCVBaseClasses</Filter>
     </ClInclude>
-    <ClInclude Include="usingVectorClass.h">
-      <Filter>헤더 파일</Filter>
+    <ClInclude Include="usingPointClass.h">
+      <Filter>헤더 파일\OpenCVBaseClasses</Filter>
     </ClInclude>
     <ClInclude Include="usingRangeAndEtcClass.h">
-      <Filter>헤더 파일</Filter>
+      <Filter>헤더 파일\OpenCVBaseClasses</Filter>
+    </ClInclude>
+    <ClInclude Include="usingVectorClass.h">
+      <Filter>헤더 파일\OpenCVBaseClasses</Filter>
+    </ClInclude>
+    <ClInclude Include="window_move.h">
+      <Filter>헤더 파일\usingWindowUI</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
