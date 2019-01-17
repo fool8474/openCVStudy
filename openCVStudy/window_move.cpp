@@ -1,8 +1,6 @@
-#include <opencv2/opencv.hpp>
-#include "window_move.h"
+#include "mainHeader.h"
 
 using namespace std;
-
 
 void helloWindow() {
 	cv::Mat image1(300, 400, CV_8U, cv::Scalar(255)); //Èò»ö¹ÙÅÁ ¿µ»ó »ý¼º
