@@ -15,3 +15,4 @@
 // Chap 3
 #include "window_move.h"
 #include "cvEventControl.h"
+#include "TrackBarEvent.h"

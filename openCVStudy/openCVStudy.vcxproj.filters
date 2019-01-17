@@ -51,6 +51,9 @@
     <ClCompile Include="cvEventControl.cpp">
       <Filter>소스 파일\usingWindowUI</Filter>
     </ClCompile>
+    <ClCompile Include="TrackBarEvent.cpp">
+      <Filter>소스 파일\usingWindowUI</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="mainHeader.h">
@@ -74,8 +77,11 @@
     <ClInclude Include="window_move.h">
       <Filter>헤더 파일\usingWindowUI</Filter>
     </ClInclude>
+    <ClInclude Include="TrackBarEvent.h">
+      <Filter>헤더 파일\usingWindowUI</Filter>
+    </ClInclude>
     <ClInclude Include="cvEventControl.h">
-      <Filter>헤더 파일</Filter>
+      <Filter>헤더 파일\usingWindowUI</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

@@ -123,12 +123,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="cvEventControl.cpp" />
+    <ClCompile Include="cvEventControl.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="firstOpenCV.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="mainFile.cpp" />
+    <ClCompile Include="TrackBarEvent.cpp" />
     <ClCompile Include="usingMatClass.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
     </ClCompile>
@@ -149,6 +152,7 @@
     <ClInclude Include="cvEventControl.h" />
     <ClInclude Include="firstOpenCV.h" />
     <ClInclude Include="mainHeader.h" />
+    <ClInclude Include="TrackBarEvent.h" />
     <ClInclude Include="usingMatClass.h" />
     <ClInclude Include="usingPointClass.h" />
     <ClInclude Include="usingRangeAndEtcClass.h" />
