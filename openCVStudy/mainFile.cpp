@@ -7,7 +7,8 @@ int main(void) {
 	//MatAdjust();
 	//vectorInfo();
 	//rangeTest();
-	ROIMethod();
+	//ROIMethod();
+	invTMul();
 	system("pause");
 
 	return 0;

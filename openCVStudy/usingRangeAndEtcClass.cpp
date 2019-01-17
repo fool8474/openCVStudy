@@ -68,3 +68,32 @@ void ROIMethod() {
 	std::cout << m2 << std::endl;
 	std::cout << m3 << std::endl;
 }
+
+
+/*
+기타 메소드들
+
+Mat 객체 원소 추가 & 삭제 : push_back(), pop_back()
+Mat 객체 해제 : release()
+Mat 객체 역행렬 : t()
+*/
+
+//push back은 행렬, 배열, 일반자료형의 원소를 삽입 가능. 행렬(Mat)일때는 자료형과 열 개수 일치할 필요.
+//pop back은 마지막 위치에서 원소들 제거. (행이 사라진다!)
+//release는 행렬을 해체시킨다. 보통 파괴자 작동시 자동 호출된다.
+
+void invTMul() {
+	float data[] = { 1,0,2, -3,4,6, -1,-2,3 };
+	cv::Mat m1(3,3, CV_32F, data);
+	cv::Mat m2(cv::Matx13f(6, 30, 8)); // shape(3,1), data(6,30,8)의 행렬, y값이 된다.
+	cv::Mat m2_t = m2.t(); // 
+
+	cv::Mat m1_inv = m1.inv(cv::DECOMP_LU); //역행렬 계산
+	cv::Mat x = m1_inv * m2_t; //행렬 곱
+	
+	std::cout << "[m1] = " << std::endl << m1 << std::endl;
+	std::cout << "[m1_int] = " << std::endl << m1_inv << std::endl;
+	std::cout << "[x] = " << std::endl << x << std::endl;
+
+	std::cout << "연립방정식의 해 x1, x2, x3 = " << x.t() << std::endl << std::endl;
+}

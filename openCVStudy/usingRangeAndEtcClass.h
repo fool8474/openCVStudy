@@ -9,3 +9,5 @@ void rangeTest();
 void print_locateROI(std::string str, cv::Mat m);
 
 void ROIMethod();
+
+void invTMul();
