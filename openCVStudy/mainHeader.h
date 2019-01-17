@@ -7,3 +7,4 @@
 #include "usingPointClass.h"
 #include "usingMatClass.h"
 #include "usingVectorClass.h"
+#include "usingRangeAndEtcClass.h"

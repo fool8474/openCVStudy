@@ -134,13 +134,19 @@
     <ClCompile Include="usingPointClass.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="usingVectorClass.cpp" />
+    <ClCompile Include="usingRangeAndEtcClass.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="usingVectorClass.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="firstOpenCV.h" />
     <ClInclude Include="mainHeader.h" />
     <ClInclude Include="usingMatClass.h" />
     <ClInclude Include="usingPointClass.h" />
+    <ClInclude Include="usingRangeAndEtcClass.h" />
     <ClInclude Include="usingVectorClass.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

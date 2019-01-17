@@ -5,7 +5,9 @@ int main(void) {
 	//MatTutorial();
 	//MatInitialize();
 	//MatAdjust();
-	vectorInfo();
+	//vectorInfo();
+	//rangeTest();
+	ROIMethod();
 	system("pause");
 
 	return 0;
