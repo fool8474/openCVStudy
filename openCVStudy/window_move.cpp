@@ -14,7 +14,7 @@ void helloWindow() {
 	//WINDOW_NORMAL : 값 0, 윈도우 크기의 재조정 가능
 	//WINDOW_OPENGL : 값 8, OpenGL을 지원하는 윈도우 생성
 
-	cv::moveWindow(title1, 10, 10); //시작할떄 위치
+	cv::moveWindow(title1, 10, 10); //시작할때 위치
 	cv::moveWindow(title2, 500, 500);
 
 	cv::imshow(title1, image1); //행렬 원소를 영상으로 표시
@@ -25,7 +25,7 @@ void helloWindow() {
 	cv::resizeWindow(title2, 800, 300);
 	cv::waitKey();
 
-	cv::moveWindow(title1, 110, 110); //시작할떄 위치
+	cv::moveWindow(title1, 110, 110); //시작할때 위치
 	cv::moveWindow(title2, 550, 550);
 	cv::waitKey();
 

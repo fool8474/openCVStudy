@@ -54,6 +54,9 @@
     <ClCompile Include="TrackBarEvent.cpp">
       <Filter>소스 파일\usingWindowUI</Filter>
     </ClCompile>
+    <ClCompile Include="drawLineRect.cpp">
+      <Filter>소스 파일\usingWindowUI</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="mainHeader.h">
@@ -81,6 +84,9 @@
       <Filter>헤더 파일\usingWindowUI</Filter>
     </ClInclude>
     <ClInclude Include="cvEventControl.h">
+      <Filter>헤더 파일\usingWindowUI</Filter>
+    </ClInclude>
+    <ClInclude Include="drawLineRect.h">
       <Filter>헤더 파일\usingWindowUI</Filter>
     </ClInclude>
   </ItemGroup>

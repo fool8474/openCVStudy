@@ -28,7 +28,7 @@ void barTest() {
 }
 
 string bar_name = "¹à±â°ª";
-void barOnMouse(int event, int x, int y, int flags, int value, void * param) {
+void barOnMouse(int event, int x, int y, int flags, void * param) {
 	if (event == cv::EVENT_RBUTTONDOWN) {
 		cv::add(image, 10, image);
 		cv::setTrackbarPos(bar_name, title, image.at<uchar>(0));
