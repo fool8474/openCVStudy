@@ -50,3 +50,46 @@ void drawFont() {
 	cv::imshow("글자쓰기", image);
 	cv::waitKey(0);
 }
+
+//원 그리기 circle()
+//center로 위치를, radius로 전체 길이를 잡는다.
+//나머지는 rect와 유사
+
+void drawCircle() {
+	cv::Scalar orange(0, 165, 255), blue(255, 0, 0), magenta(255, 0, 255);
+	cv::Mat image(300, 500, CV_8UC3, cv::Scalar(255, 255, 255));
+
+	cv::Point center = (cv::Point)image.size() / 2;
+	cv::Point pt1(70, 50), pt2(350, 220);
+
+	cv::circle(image, center, 100, blue);
+	cv::circle(image, pt1, 80, orange, 4); //굵기 4
+	cv::circle(image, pt2, 60, magenta, -1); //원 내부 채움 -의 계수 차이는 없는듯
+
+	int font = cv::FONT_HERSHEY_SCRIPT_COMPLEX;
+	cv::putText(image, "center_blue", center, font, 1.2, blue);
+	cv::putText(image, "pt1_orange", pt1, font, 0.8, orange);
+	cv::putText(image, "pt2_magenta", pt2 + cv::Point(2, 2), font, 0.5, cv::Scalar(0, 0, 0), 2); // 그림자 효과 (검정색 표현)
+	cv::putText(image, "pt2_magenta", pt2, font, 0.5, magenta, 1);
+
+	cv::imshow("원그리기", image);
+	cv::waitKey(0);
+}
+
+//타원 그리기 eclipse()
+//center로 잡고, size로 (x,y)축 반지름 잡는다. 각도는 angle, startAngle, endAngle로 시작, 종료 각도 잡고 RotateRect로 중심 좌표, 사각형 크기, 회전 각도 등 포함해 타원을 그릴수도 있다.
+void drawEclipse() {
+	cv::Scalar orange(0, 165, 255), blue(255, 0, 0), magenta(255, 0, 255);
+	cv::Mat image(300, 700, CV_8UC3, cv::Scalar(255, 255, 255));
+
+	cv::Point pt1(120, 150), pt2(550, 150);
+	cv::circle(image, pt1, 1, cv::Scalar(0), 1);
+	cv::circle(image, pt2, 1, cv::Scalar(0), 1); // 타원의 중심점 표시
+	cv::ellipse(image, pt1, cv::Size(100, 60), 0, 0, 360, orange, 2); //타원 그리기 각도 0+
+	cv::ellipse(image, pt1, cv::Size(100, 60), 0, 30, 270, blue, 4); //호 그리기 30~270
+	cv::ellipse(image, pt2, cv::Size(100, 60), 30, 0, 360, orange, 2); //타원 그리기 각도 30
+	cv::ellipse(image, pt2, cv::Size(100, 60), 30, -30, 160, magenta, 4); //호 그리기 각도 30, -30~160
+
+	cv::imshow("타원 및 호 그리기", image);
+	cv::waitKey(0);
+}

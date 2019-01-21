@@ -18,7 +18,10 @@ int main(void) {
 	//barTest(); //bar를 조절하여 밝기 변화
 	//barMouseTest(); //마우스 클릭을 통해서 밝기 변화
 	//drawLineRect(); // 선과 사각형 그리기
-	drawFont();
+	//drawFont(); // 폰트 그리기
+	//drawCircle(); // 원+폰트 그리기
+	//drawEclipse(); //타원 그리기
+	titleToDrawRectCircle();
 	system("pause");
 
 	return 0;

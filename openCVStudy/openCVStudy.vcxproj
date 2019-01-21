@@ -127,6 +127,7 @@
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="drawLineRect.cpp" />
+    <ClCompile Include="eventToDrawRectCircle.cpp" />
     <ClCompile Include="firstOpenCV.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
@@ -154,6 +155,7 @@
   <ItemGroup>
     <ClInclude Include="cvEventControl.h" />
     <ClInclude Include="drawLineRect.h" />
+    <ClInclude Include="eventToDrawRectCircle.h" />
     <ClInclude Include="firstOpenCV.h" />
     <ClInclude Include="mainHeader.h" />
     <ClInclude Include="TrackBarEvent.h" />

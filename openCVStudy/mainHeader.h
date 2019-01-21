@@ -17,3 +17,4 @@
 #include "cvEventControl.h"
 #include "TrackBarEvent.h"
 #include "drawLineRect.h"
+#include "eventToDrawRectCircle.h"
