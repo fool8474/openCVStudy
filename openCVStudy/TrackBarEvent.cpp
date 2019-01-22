@@ -2,7 +2,7 @@
 //createTrackbar()함수를 통해 생성.
 
 #include "mainHeader.h"
-#include "TrackBarEvent.h"
+
 using namespace std;
 
 string title = "트랙바 이벤트";

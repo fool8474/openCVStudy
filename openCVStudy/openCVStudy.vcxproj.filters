@@ -25,6 +25,12 @@
     <Filter Include="헤더 파일\usingWindowUI">
       <UniqueIdentifier>{5bca8e10-6f49-40d3-be01-c04a95c134b4}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\IOTechnique">
+      <UniqueIdentifier>{e980671c-3365-40af-9409-7c71e215ca31}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\IOTechnique">
+      <UniqueIdentifier>{3f1e3f92-f9f7-4721-8bcf-6461ee72548f}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="mainFile.cpp">
@@ -60,6 +66,12 @@
     <ClCompile Include="eventToDrawRectCircle.cpp">
       <Filter>소스 파일\usingWindowUI</Filter>
     </ClCompile>
+    <ClCompile Include="readImage.cpp">
+      <Filter>소스 파일\IOTechnique</Filter>
+    </ClCompile>
+    <ClCompile Include="writeImage.cpp">
+      <Filter>소스 파일\IOTechnique</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="mainHeader.h">
@@ -94,6 +106,12 @@
     </ClInclude>
     <ClInclude Include="eventToDrawRectCircle.h">
       <Filter>헤더 파일\usingWindowUI</Filter>
+    </ClInclude>
+    <ClInclude Include="readImage.h">
+      <Filter>헤더 파일\IOTechnique</Filter>
+    </ClInclude>
+    <ClInclude Include="writeImage.h">
+      <Filter>헤더 파일\IOTechnique</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

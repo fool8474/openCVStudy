@@ -21,7 +21,13 @@ int main(void) {
 	//drawFont(); // 폰트 그리기
 	//drawCircle(); // 원+폰트 그리기
 	//drawEclipse(); //타원 그리기
-	titleToDrawRectCircle();
+	//titleToDrawRectCircle(); // 전체 그리기 테스트
+
+	//imgReader(); // grayscale 파일 불러오기
+	//imgReaderColor(); // color 파일 불러오기
+	tifImageReader(); // 16/32비트의 tif파일 불러오기
+	//writeImage(); // jpg color 파일을 불러와 jpg, bmp, png로 저장
+	//writeImageTo16And32(); // 8UC3 파일을 16UC3, 32FC3으로 변환 저장
 	system("pause");
 
 	return 0;

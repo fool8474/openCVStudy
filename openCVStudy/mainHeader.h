@@ -18,3 +18,6 @@
 #include "TrackBarEvent.h"
 #include "drawLineRect.h"
 #include "eventToDrawRectCircle.h"
+
+#include "readImage.h"
+#include "writeImage.h"
