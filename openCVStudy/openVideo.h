@@ -9,3 +9,5 @@ void zoom_bar(int value, void *);
 void focus_bar(int value, void *);
 
 void setCamera();
+
+void adjustVideoFile();

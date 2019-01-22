@@ -107,7 +107,29 @@ void setCamera() {
 	}
 }
 
+// 비디오 파일을 받아서 조정해보자.
+void adjustVideoFile() {
+	capture.open("../video/sample.mp4");
+	CV_Assert(capture.isOpened());
 
+	double frame_rate = capture.get(CV_CAP_PROP_FPS); // 초당 프레임 수
+	int delay = 1000 / frame_rate; // 지연시간
+	int frame_cnt = 0;
+	cv::Mat frame;
+
+	while (capture.read(frame)) {
+		if (cv::waitKey(delay) >= 0) break;
+
+		if (frame_cnt < 100);
+		else if (frame_cnt < 200) frame -= cv::Scalar(0, 0, 100);
+		else if (frame_cnt < 300) frame -= cv::Scalar(100, 0, 0);
+		else if (frame_cnt < 400) frame -= frame * 1.5;
+		else if (frame_cnt < 500) frame -= frame * 0.5;
+
+		put_string(frame, "frame_cnt", cv::Point(20, 50), frame_cnt);
+		cv::imshow("동영상 파일읽기", frame);
+	}
+}
 
 
 

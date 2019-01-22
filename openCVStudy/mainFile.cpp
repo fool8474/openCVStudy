@@ -29,7 +29,8 @@ int main(void) {
 	//writeImage(); // jpg color 파일을 불러와 jpg, bmp, png로 저장
 	//writeImageTo16And32(); // 8UC3 파일을 16UC3, 32FC3으로 변환 저장
 	//helloVideo(); // video 정보를 출력, font 삽입
-	setCamera(); // trackbar를 통해 영상의 zoom과 focus를 조절
+	//setCamera(); // trackbar를 통해 영상의 zoom과 focus를 조절
+	adjustVideoFile();
 	system("pause");
 
 	return 0;
