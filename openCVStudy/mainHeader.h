@@ -21,3 +21,4 @@
 
 #include "readImage.h"
 #include "writeImage.h"
+#include "openVideo.h"

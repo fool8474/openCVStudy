@@ -72,6 +72,9 @@
     <ClCompile Include="writeImage.cpp">
       <Filter>소스 파일\IOTechnique</Filter>
     </ClCompile>
+    <ClCompile Include="openVideo.cpp">
+      <Filter>소스 파일\IOTechnique</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="mainHeader.h">
@@ -111,6 +114,9 @@
       <Filter>헤더 파일\IOTechnique</Filter>
     </ClInclude>
     <ClInclude Include="writeImage.h">
+      <Filter>헤더 파일\IOTechnique</Filter>
+    </ClInclude>
+    <ClInclude Include="openVideo.h">
       <Filter>헤더 파일\IOTechnique</Filter>
     </ClInclude>
   </ItemGroup>

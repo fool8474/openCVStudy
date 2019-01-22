@@ -137,8 +137,9 @@
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="mainFile.cpp" />
+    <ClCompile Include="openVideo.cpp" />
     <ClCompile Include="readImage.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="TrackBarEvent.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
@@ -158,7 +159,9 @@
     <ClCompile Include="window_move.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="writeImage.cpp" />
+    <ClCompile Include="writeImage.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="cvEventControl.h" />
@@ -166,6 +169,7 @@
     <ClInclude Include="eventToDrawRectCircle.h" />
     <ClInclude Include="firstOpenCV.h" />
     <ClInclude Include="mainHeader.h" />
+    <ClInclude Include="openVideo.h" />
     <ClInclude Include="readImage.h" />
     <ClInclude Include="TrackBarEvent.h" />
     <ClInclude Include="usingMatClass.h" />
