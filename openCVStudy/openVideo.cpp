@@ -79,7 +79,7 @@ void focus_bar(int value, void*) {
 }
 
 void setCamera() {
-	capture.open("../video/sample.mp4"); // 사실 자체 내장 카메라 0번을 연결해서 사용해야 바뀜 (capture.open(0))
+	capture.open("../video/sampleWakako.avi"); // 사실 자체 내장 카메라 0번을 연결해서 사용해야 바뀜 (capture.open(0))
 	CV_Assert(capture.isOpened());
 
 	capture.set(cv::CAP_PROP_FRAME_WIDTH, 400); // 카메라 프레임 너비
@@ -109,7 +109,7 @@ void setCamera() {
 
 // 비디오 파일을 받아서 조정해보자.
 void adjustVideoFile() {
-	capture.open("../video/sample.mp4");
+	capture.open("../video/sampleWakako.avi");
 	CV_Assert(capture.isOpened());
 
 	double frame_rate = capture.get(CV_CAP_PROP_FPS); // 초당 프레임 수
@@ -120,11 +120,14 @@ void adjustVideoFile() {
 	while (capture.read(frame)) {
 		if (cv::waitKey(delay) >= 0) break;
 
+		frame_cnt = capture.get(cv::CAP_PROP_POS_FRAMES); // Frame 번호를 가져온다.
+
 		if (frame_cnt < 100);
 		else if (frame_cnt < 200) frame -= cv::Scalar(0, 0, 100);
-		else if (frame_cnt < 300) frame -= cv::Scalar(100, 0, 0);
-		else if (frame_cnt < 400) frame -= frame * 1.5;
-		else if (frame_cnt < 500) frame -= frame * 0.5;
+		else if (frame_cnt < 300) frame += cv::Scalar(100, 0, 0);
+		else if (frame_cnt < 400) frame = frame * 1.5;
+		else if (frame_cnt < 500) frame = frame * 0.5;
+		// 프레임 번호마다 다른 화소값이 된다.
 
 		put_string(frame, "frame_cnt", cv::Point(20, 50), frame_cnt);
 		cv::imshow("동영상 파일읽기", frame);
