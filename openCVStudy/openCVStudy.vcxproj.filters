@@ -31,6 +31,12 @@
     <Filter Include="헤더 파일\IOTechnique">
       <UniqueIdentifier>{3f1e3f92-f9f7-4721-8bcf-6461ee72548f}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\OperationsOnArrays">
+      <UniqueIdentifier>{7bff0f98-acc6-4c37-9364-0390cd2b6aa5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\OperationsOnArrays">
+      <UniqueIdentifier>{717cfaf5-765b-4bd3-98cc-b9cc84df384a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="mainFile.cpp">
@@ -75,6 +81,9 @@
     <ClCompile Include="openVideo.cpp">
       <Filter>소스 파일\IOTechnique</Filter>
     </ClCompile>
+    <ClCompile Include="mat_Array.cpp">
+      <Filter>소스 파일\OperationsOnArrays</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="mainHeader.h">
@@ -118,6 +127,9 @@
     </ClInclude>
     <ClInclude Include="openVideo.h">
       <Filter>헤더 파일\IOTechnique</Filter>
+    </ClInclude>
+    <ClInclude Include="mat_Array.h">
+      <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

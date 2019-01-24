@@ -137,7 +137,10 @@
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="mainFile.cpp" />
-    <ClCompile Include="openVideo.cpp" />
+    <ClCompile Include="mat_Array.cpp" />
+    <ClCompile Include="openVideo.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="readImage.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
     </ClCompile>
@@ -169,6 +172,7 @@
     <ClInclude Include="eventToDrawRectCircle.h" />
     <ClInclude Include="firstOpenCV.h" />
     <ClInclude Include="mainHeader.h" />
+    <ClInclude Include="mat_Array.h" />
     <ClInclude Include="openVideo.h" />
     <ClInclude Include="readImage.h" />
     <ClInclude Include="TrackBarEvent.h" />
